@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<section class="detalleReserva">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <a href="{% url 'ReservaList' %}"><button class="diseñobtnvolver"><i class="fa-solid fa-arrow-left"></i> Volver</button></a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h2>Detalle de reserva hecha por "{{ object.RES_USER }}"</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <ul>
+                <li>Fecha de ingreso: {{object.RES_FECHA_INGRESO}}</li>
+                <li>Fecha de salida: {{object.RES_FECHA_SALIDA}}</li>
+                <li>Cantidad de dias: {{object.RES_CANTIDAD_DIAS}}</li>
+                <li>Asistentes: {{object.RES_ASISTENTES}}</li>
+                <li>Valor total: {{object.RES_VALOR_RESERVA}}</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
+
+
