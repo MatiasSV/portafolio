@@ -24,6 +24,9 @@ urlpatterns = [
     path("", include("apps.authentication.urls")),
     path("", include("apps.home.urls")),    
 
+    path('', include('pwa.urls')),
+
+
   
 
     #URL PRINCIPAL QUE MUESTRA EL HOME DE LA PÁGINA AL INGRESAR Al Localhost http://127.0.0.1:8000/ 

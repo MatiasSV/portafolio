@@ -148,3 +148,27 @@ STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static',
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+
+
+# PWA
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'serviceworker.js')
+
+PWA_APP_NAME = 'Proyecto Turismo Real'
+PWA_APP_DESCRIPTION = 'Arriendos de temporada Turismo Real'
+PWA_APP_THEME_COLOR = '#C7A519'
+PWA_APP_BACKGROUND_COLOR = '#fff'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/img/LogoTR.png',
+        'sizes': '128x128'
+    },
+    {
+        'src': '/static/img/LogoTR.png',
+        'sizes': '256x256'
+    },
+    {
+        'src': '/static/img/LogoTR.png',
+        'sizes': '512x512'
+    }
+]

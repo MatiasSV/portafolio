@@ -123,16 +123,16 @@ class RESERVA(models.Model):
 # RES_TRANSPORTE_2 = models.IntegerField(('Transporte vuelta'),null=True, blank=True)
 
 
-class CHECKLIST(models.Model):
-    CLIST_ID = models.AutoField(('ID Checklist'), primary_key=True)
-    CLIST_DEPARTAMENTO = models.ForeignKey(DEPARTAMENTO, on_delete=models.CASCADE)
+# class CHECKLIST(models.Model):
+#     CLIST_ID = models.AutoField(('ID Checklist'), primary_key=True)
+#     CLIST_DEPARTAMENTO = models.ForeignKey(DEPARTAMENTO, on_delete=models.CASCADE)
     
-    CLIST_ULTIMA_MODIFICACION = models.DateField(('Fecha última modificación'),null=True, blank=True, auto_now=True)
+#     CLIST_ULTIMA_MODIFICACION = models.DateField(('Fecha última modificación'),null=True, blank=True, auto_now=True)
 
 
-class CHECKIN(models.Model):
-    CIN_ID = models.AutoField(('ID Check In'), primary_key=True)
+# class CHECKIN(models.Model):
+#     CIN_ID = models.AutoField(('ID Check In'), primary_key=True)
 
 
-class CHECKOUT(models.Model):
-    COUT_ID = models.AutoField(('ID Check Out'), primary_key=True)
+# class CHECKOUT(models.Model):
+#     COUT_ID = models.AutoField(('ID Check Out'), primary_key=True)
