@@ -1,4 +1,4 @@
-# portafolio
+# PORTAFOLIO DE TITULO
 _____________________________________________________________________________________________________________________________________________________________________
 
 Proyecto desarrollado para Portafolio de Título de la carrera Ingenería en Informática Duoc UC.
